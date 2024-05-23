@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{86b5b357-af74-4184-b4cd-ba8f2d92223a}">
+		<property name="assetPath">
+			<value>Sonic/ResultVoice/V_SNC_023.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>32</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.3173125000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4a656590-cb91-461e-b523-756ae0471b68}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec995e51a6e251468d2a3fd8a686257, type: 3}
+  m_Name: UniversalRenderPipelineGlobalSettings
+  m_EditorClassIdentifier: 
+  m_Settings:
+    m_SettingsList: []
+    m_RuntimeSettings: []
+  m_AssetVersion: 5
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: 327be58d2ed53724b80b184aac14422d, type: 2}
+  m_RenderingLayerNames:
+  - Default
+  m_ValidRenderingLayers: 1
+  lightLayerName0: 
+  lightLayerName1: 
+  lightLayerName2: 
+  lightLayerName3: 
+  lightLayerName4: 
+  lightLayerName5: 
+  lightLayerName6: 
+  lightLayerName7: 
+  apvScenesData:
+    m_ObsoleteSerializedBakingSets: []
+    sceneToBakingSet:
+      m_Keys:
+      - 4bf1fe20ae660734e8907767561b8cfc
+      - 98467bc5b6f87014f9a750ba83f0bb7f
+      - 39bc00dea45efee4d9bdb4cf018489f2
+      - 090b503e2db5f7d45aac6f4af24aebee
+      m_Values:
+      - {fileID: 11400000, guid: 5186154aaa43f3045aa8e8cb1b03380a, type: 2}
+      - {fileID: 11400000, guid: 41def48401cd352428011b5ce6ce0160, type: 2}
+      - {fileID: 11400000, guid: 79283f6700efb084aa64e70f2780753a, type: 2}
+      - {fileID: 11400000, guid: 1a4460f46822b134a8ad381c3402704a, type: 2}
+    bakingSets:
+    - {fileID: 11400000, guid: 5186154aaa43f3045aa8e8cb1b03380a, type: 2}
+    - {fileID: 11400000, guid: 41def48401cd352428011b5ce6ce0160, type: 2}
+    - {fileID: 11400000, guid: 79283f6700efb084aa64e70f2780753a, type: 2}
+    - {fileID: 11400000, guid: 1a4460f46822b134a8ad381c3402704a, type: 2}
+    sceneBounds:
+      m_Keys:
+      - 39bc00dea45efee4d9bdb4cf018489f2
+      - 3eb8bc4180452f941a356e282c2cb2e5
+      - 4bf1fe20ae660734e8907767561b8cfc
+      - 090b503e2db5f7d45aac6f4af24aebee
+      m_Values:
+      - m_Center: {x: 40.5, y: 364.5, z: 162}
+        m_Extent: {x: 526.5, y: 445.5, z: 567}
+      - m_Center: {x: 1620, y: 40.5, z: -1620}
+        m_Extent: {x: 2592, y: 202.5, z: 1863}
+      - m_Center: {x: 162, y: -202.5, z: 81}
+        m_Extent: {x: 243, y: 283.5, z: 162}
+      - m_Center: {x: 81, y: -40.5, z: 0}
+        m_Extent: {x: 486, y: 202.5, z: 486}
+    hasProbeVolumes:
+      m_Keys:
+      - 39bc00dea45efee4d9bdb4cf018489f2
+      - ad2b4d3c638af674fb7f210a3fab0d25
+      - 3eb8bc4180452f941a356e282c2cb2e5
+      - 1b0971068e5945d4499744f51fdde537
+      - 98467bc5b6f87014f9a750ba83f0bb7f
+      - 4bf1fe20ae660734e8907767561b8cfc
+      - 090b503e2db5f7d45aac6f4af24aebee
+      m_Values: 00000000000101
+  m_ShaderStrippingSetting:
+    m_Version: 0
+    m_ExportShaderVariants: 1
+    m_ShaderVariantLogLevel: 0
+    m_StripRuntimeDebugShaders: 1
+  m_URPShaderStrippingSetting:
+    m_Version: 0
+    m_StripUnusedPostProcessingVariants: 0
+    m_StripUnusedVariants: 1
+    m_StripScreenCoordOverrideVariants: 1
+  m_ShaderVariantLogLevel: 0
+  m_ExportShaderVariants: 1
+  m_StripDebugVariants: 1
+  m_StripUnusedPostProcessingVariants: 0
+  m_StripUnusedVariants: 1
+  m_StripScreenCoordOverrideVariants: 1
+  supportRuntimeDebugDisplay: 0
+  references:
+    version: 2
+    RefIds: []

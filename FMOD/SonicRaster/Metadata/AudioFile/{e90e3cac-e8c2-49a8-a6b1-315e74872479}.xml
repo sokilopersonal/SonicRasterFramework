@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e90e3cac-e8c2-49a8-a6b1-315e74872479}">
+		<property name="assetPath">
+			<value>World/Enemy/01_enmsn_cmn_damage3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.89072562358276641</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4a656590-cb91-461e-b523-756ae0471b68}</destination>
+		</relationship>
+	</object>
+</objects>

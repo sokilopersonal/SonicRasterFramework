@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{a9a01d43-6af7-4c50-bcbe-1246ffb155bb}">
+		<property name="assetPath">
+			<value>Ranks/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4a656590-cb91-461e-b523-756ae0471b68}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{08ba642c-c562-4bda-a414-cb58a1f59faa}">
+		<property name="assetPath">
+			<value>Sonic/Steps/00_sn_walk_mtlp_4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>32</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.27287499999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4a656590-cb91-461e-b523-756ae0471b68}</destination>
+		</relationship>
+	</object>
+</objects>

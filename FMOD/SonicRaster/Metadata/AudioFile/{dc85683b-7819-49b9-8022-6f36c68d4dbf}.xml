@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dc85683b-7819-49b9-8022-6f36c68d4dbf}">
+		<property name="assetPath">
+			<value>Ranks/04_sys_actstg_total.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>32</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1245937499999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4a656590-cb91-461e-b523-756ae0471b68}</destination>
+		</relationship>
+	</object>
+</objects>
