@@ -23,7 +23,7 @@ namespace SonicFramework.PlayerStates
             effects.EnableJumpBall(true);
             sounds.PlaySound("Homing");
             
-            animator.SetBool(PlayerHash.Jumped, true);
+            //animator.SetBool(PlayerHash.Jumped, true);
             animator.SetBool("InHoming", true);
         }
 
@@ -35,7 +35,7 @@ namespace SonicFramework.PlayerStates
             
             effects.EnableJumpBall(false);
             
-            animator.SetBool(PlayerHash.Jumped, false);
+            //animator.SetBool(PlayerHash.Jumped, false);
             animator.SetBool("InHoming", false);
         }
 

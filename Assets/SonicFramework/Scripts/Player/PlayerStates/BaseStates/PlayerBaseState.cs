@@ -22,7 +22,7 @@ namespace SonicFramework.PlayerStates
             this.gameObject = gameObject;
             transform = gameObject.transform;
             player = this.gameObject.GetComponent<PlayerBase>();
-            animator = gameObject.GetComponentInChildren<Animator>();
+            animator = player.Model.GetComponent<Animator>();
             effects = gameObject.GetComponentInChildren<PlayerEffects>();
             sounds = gameObject.GetComponentInChildren<PlayerSounds>();
             col = gameObject.GetComponentInChildren<CapsuleCollider>();

@@ -7,32 +7,32 @@ namespace SonicFramework
 {
     public class PlayerFlags : PlayerComponent
     {
-        public List<Flag> FlagsList;
+        public List<Flag> List;
 
         private void Awake()
         {
-            FlagsList = new List<Flag>();
+            List = new List<Flag>();
         }
 
         public void Add(Flag flag)
         {
-            if (!FlagsList.Contains(flag))
+            if (!List.Contains(flag))
             {
-                FlagsList.Add(flag);
+                List.Add(flag);
             }
         }
 
         public void Remove(Flag flag)
         {
-            if (FlagsList.Contains(flag))
+            if (List.Contains(flag))
             {
-                FlagsList.Remove(flag);
+                List.Remove(flag);
             } 
         }
 
         public bool Check(Flag flag)
         {
-            return FlagsList.Contains(flag);
+            return List.Contains(flag);
         }
     }
 }

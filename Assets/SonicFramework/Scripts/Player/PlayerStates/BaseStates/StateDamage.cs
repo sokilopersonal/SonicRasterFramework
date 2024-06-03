@@ -27,8 +27,8 @@ namespace SonicFramework.PlayerStates
             detachedTimer = 0.15f;
             
             animator.SetBool("InDamage", true);
-            animator.Play("Movement Blend");
-            animator.CrossFadeInFixedTime("Lay", 0.25f, 0);
+            // animator.Play("Movement Blend");
+            // animator.CrossFadeInFixedTime("Lay", 0.25f, 0);
             
             //transform.position += Vector3.up * 0.2f;
             
@@ -52,7 +52,7 @@ namespace SonicFramework.PlayerStates
             {
                 if (!animated)
                 {
-                    animator.Play("Standup");
+                    //animator.Play("Standup");
                     timer = 0.75f;
                     animated = true;
                 }

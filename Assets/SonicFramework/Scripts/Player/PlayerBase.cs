@@ -89,7 +89,7 @@ namespace SonicFramework
                 $"Camera State {Camera.fsm.CurrentState.ToString().Replace("SonicFramework.CameraStates.", "")}",
                 style);
             
-            GUI.Label(new Rect(10, 250, 200, 30), $"Flags: {string.Join(", ", Flags.FlagsList)}", style);
+            GUI.Label(new Rect(10, 250, 200, 30), $"Flags: {string.Join(", ", Flags.List)}", style);
         }
     }
 }

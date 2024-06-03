@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdd2f626a974f17a5a7c047d4f6369b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationType: 1
 --- !u!1 &193174904117714218
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdd2f626a974f17a5a7c047d4f6369b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationType: 1
 --- !u!1 &1932086617188803456
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204.72, y: -49.85}
+  m_AnchoredPosition: {x: 200, y: -41.312}
   m_SizeDelta: {x: 409.45, y: 82.622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2892888988092166802
@@ -533,8 +535,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -937,7 +939,7 @@ MonoBehaviour:
   variableToSet: enableCameraLeaning
   variables:
   - 'enableCameraLeaning = True (type: System.Boolean)'
-  - 'slopeAlignment = True (type: System.Boolean)'
+  - 'slopeAlignment = False (type: System.Boolean)'
   - 'ringPickupType = Unleashed (type: SonicFramework.RingPickupType)'
 --- !u!1 &3557993005772278280
 GameObject:
@@ -1050,7 +1052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204.72, y: -41.312}
+  m_AnchoredPosition: {x: 200, y: -41.312}
   m_SizeDelta: {x: 409.45, y: 82.622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6432372212094531531
@@ -1108,8 +1110,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1908,9 +1910,9 @@ RectTransform:
   - {fileID: 3440764056527500829}
   m_Father: {fileID: 4040214983674769637}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -807.32526, y: -93.55838}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -875, y: 75}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586484847718793330
@@ -1931,7 +1933,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 50
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -2028,6 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdd2f626a974f17a5a7c047d4f6369b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationType: 1
 --- !u!1 &6090459735684314346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,7 +2183,7 @@ MonoBehaviour:
   variableToSet: slopeAlignment
   variables:
   - 'enableCameraLeaning = True (type: System.Boolean)'
-  - 'slopeAlignment = True (type: System.Boolean)'
+  - 'slopeAlignment = False (type: System.Boolean)'
   - 'ringPickupType = Unleashed (type: SonicFramework.RingPickupType)'
 --- !u!1 &6921556570939675438
 GameObject:
@@ -2460,6 +2463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdd2f626a974f17a5a7c047d4f6369b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationType: 2
 --- !u!1 &8103257539341594647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,7 +2575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204.72, y: -41.312}
+  m_AnchoredPosition: {x: 200, y: -41.312}
   m_SizeDelta: {x: 409.45, y: 82.622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3701155815057318809
@@ -2629,8 +2633,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3055,16 +3059,17 @@ MonoBehaviour:
   targetComponent: {fileID: 11400000, guid: 185661cde2d802e4f99ccac48f1f70db, type: 2}
   variableToSet: sens
   variables:
-  - 'sens = 1,55 (type: System.Single)'
+  - 'sens = 1 (type: System.Single)'
   - 'translationSpeed = 25 (type: System.Single)'
-  - 'minDistance = 3 (type: System.Single)'
-  - 'maxDistance = 5 (type: System.Single)'
-  - 'minFov = 80 (type: System.Single)'
-  - 'maxFov = 120 (type: System.Single)'
+  - 'minDistance = 3,5 (type: System.Single)'
+  - 'maxDistance = 4 (type: System.Single)'
+  - 'minFov = 75 (type: System.Single)'
+  - 'maxFov = 100 (type: System.Single)'
+  - 'smoothTime = 32 (type: System.Single)'
   - 'velocitySpeed = 1 (type: System.Single)'
-  - 'maxLean = 0,35 (type: System.Single)'
+  - 'maxLean = 0,6 (type: System.Single)'
   - 'leanThreshold = 0 (type: System.Single)'
-  - 'lookOffset = (0.00, 0.50, 0.00) (type: UnityEngine.Vector3)'
+  - 'lookOffset = (0.00, 0.25, 0.00) (type: UnityEngine.Vector3)'
   - 'transitionSpeed = 6 (type: System.Single)'
   - 'minAngle = 1 (type: System.Single)'
   - 'radius = 0,02 (type: System.Single)'

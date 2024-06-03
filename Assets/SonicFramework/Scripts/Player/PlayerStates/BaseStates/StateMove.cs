@@ -124,7 +124,7 @@ namespace SonicFramework.PlayerStates
             _mask = config.groundMask;
             
             float skiddingDot = Vector3.Dot(inputDir, rb.velocity.normalized);
-            float brakeThreshold = 0.65f;
+            float brakeThreshold = config.brakeThreshold;
             braking = skiddingDot < -brakeThreshold;
             animator.SetBool("Braking", braking);
         }
@@ -143,14 +143,23 @@ namespace SonicFramework.PlayerStates
         
         protected virtual void Rotate()
         {
-            transformNormal = Vector3.Slerp(transformNormal, groundNormal, Time.fixedDeltaTime * 4);
+            transformNormal = Vector3.Slerp(transformNormal, groundNormal, Time.fixedDeltaTime * 8);
             
-            if (!Math.IsApproximate(rb.velocity, Vector3.zero, 0.2f))
+            // if (!Math.IsApproximate(rb.velocity, Vector3.zero, 0.2f))
+            // {
+            //     Vector3 lookDir = transform.forward;
+            //     lookDir = Vector3.Slerp(transform.forward, Vector3.ProjectOnPlane(rb.velocity, transformNormal).normalized, Time.fixedDeltaTime * 16f);
+            //     Quaternion rotation = Quaternion.LookRotation(lookDir, transformNormal);
+            //     transform.rotation = rotation;
+            // }
+            
+            Vector3 velocity = rb.velocity;
+            velocity = Vector3.ProjectOnPlane(velocity, groundNormal);
+
+            if (velocity.magnitude > 0.2f) 
             {
-                Vector3 lookDir = transform.forward;
-                lookDir = Vector3.Slerp(transform.forward, Vector3.ProjectOnPlane(rb.velocity, transformNormal).normalized, Time.fixedDeltaTime * 16f);
-                Quaternion rotation = Quaternion.LookRotation(lookDir, transformNormal);
-                transform.rotation = rotation;
+                Quaternion rotation = Quaternion.LookRotation(velocity, transformNormal);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 20f);
             }
         }
 

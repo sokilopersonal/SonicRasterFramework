@@ -25,7 +25,7 @@ namespace SonicFramework.PlayerStates
             _groundHandlingAmount = config.groundHandlingAmount;
             fullStopThreshold = config.fullStopThreshold;
 
-            idleActivateThreshold = 5;
+            idleActivateThreshold = 3;
         }
 
         public override void Enter()
@@ -92,12 +92,12 @@ namespace SonicFramework.PlayerStates
             
             if (idleTimer <= idleActivateThreshold)
             {
-                //idleTimer += Time.deltaTime;
+                idleTimer += Time.deltaTime;
             }
             else
             {
                 animator.SetBool("Idling", true);
-                animator.SetInteger("IdleIndex", Random.Range(0, 5));
+                animator.SetInteger("IdleIndex", Random.Range(0, 4));
                 
                 idleTimer = 0;
             }
@@ -201,7 +201,7 @@ namespace SonicFramework.PlayerStates
                 rb.velocity = Vector3.ProjectOnPlane(rb.velocity, groundNormal);
                 if (detachedTimer == 0)
                 {
-                    Vector3 lerped = Vector3.Lerp(rb.position, target, 16 * Time.fixedDeltaTime);
+                    Vector3 lerped = Vector3.Lerp(rb.position, target, 25 * Time.fixedDeltaTime);
                     rb.position = lerped;
                 }
             }

@@ -24,7 +24,7 @@ namespace SonicFramework.PlayerStates
             }
             
             sounds.PlaySound("ChargeDropDash");
-            animator.SetBool(PlayerHash.Rolling, true);
+            //animator.SetBool(PlayerHash.Rolling, true);
 
             effects.EnableJumpBall(true);
             effects.Animate();
@@ -34,7 +34,7 @@ namespace SonicFramework.PlayerStates
         {
             base.Exit();
             
-            animator.SetBool(PlayerHash.Rolling, false);
+            //animator.SetBool(PlayerHash.Rolling, false);
             effects.EnableJumpBall(false);
         }
 

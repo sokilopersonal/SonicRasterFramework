@@ -53,13 +53,10 @@ namespace SonicFramework.PlayerStates
             if (jumpDashTimer <= config.jumpDashMaxTimer)
             {
                 rb.ResetVerticalVelocity();
-                rb.velocity = transform.forward * jumpDashForce;
+                rb.velocity = transform.forward * Mathf.Max(config.jumpDashForce, rb.velocity.magnitude);
             
                 jumpDashTimer += Time.deltaTime;
                 
-                Vector3 flat = new Vector3(0, 0, 0);
-                rb.velocity = Vector3.Lerp(rb.velocity, flat, EasingInverseSquared(velocityFadeTimer / config.velocityFadeOutTime));
-                    
                 velocityFadeTimer += Time.deltaTime;  
             }
         }

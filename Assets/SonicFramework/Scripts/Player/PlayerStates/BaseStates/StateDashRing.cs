@@ -19,13 +19,13 @@ namespace SonicFramework.PlayerStates
 
         public override void Enter()
         {
-            animator.Play("DashRing");
-            animator.SetBool(PlayerHash.DashRing, true);
+            //animator.Play("DashRing");
+            //animator.SetBool(PlayerHash.DashRing, true);
         }
 
         public override void Exit()
         {
-            animator.SetBool(PlayerHash.DashRing, false);
+            //animator.SetBool(PlayerHash.DashRing, false);
         }
 
         public override void FrameUpdate()

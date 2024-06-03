@@ -19,7 +19,7 @@ namespace SonicFramework.PlayerStates
         {
             timer = 3.1f;
             
-            animator.Play("Start 1", 0, 0);
+            //animator.Play("Start 1", 0, 0);
             animator.SetBool("Started", true);
         }
 

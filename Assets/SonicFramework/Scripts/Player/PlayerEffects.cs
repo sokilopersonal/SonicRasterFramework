@@ -105,7 +105,7 @@ namespace SonicFramework
 
         private void WindEffect()
         {
-            speedEffect.gameObject.SetActive(player.fsm.Velocity.magnitude > 30);
+            speedEffect.gameObject.SetActive(player.fsm.Velocity.magnitude > 15);
         }
 
         public void EnableJumpBall(bool value)

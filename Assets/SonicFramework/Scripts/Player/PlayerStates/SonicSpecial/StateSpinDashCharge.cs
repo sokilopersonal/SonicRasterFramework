@@ -45,7 +45,7 @@ namespace SonicFramework.PlayerStates
             
             maxStopSpeed = Mathf.Max(stopSpeed, rb.velocity.magnitude * 0.5f);
             
-            animator.Play("Roll");
+            //animator.Play("Roll");
         }
 
         public override void Exit()

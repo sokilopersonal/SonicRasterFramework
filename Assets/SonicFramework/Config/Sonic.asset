@@ -15,7 +15,6 @@ MonoBehaviour:
   topSpeed: 37
   maxSpeed: 135
   gravity: -45
-  stepOffset: 0.3
   jumpForce: 0.335
   turnSpeedOverSpeed:
     serializedVersion: 2
@@ -95,7 +94,7 @@ MonoBehaviour:
   turnRate: 8
   turnSpeed: 8
   turnSmoothing: 6
-  turnDecel: 0.25
+  turnDecel: 0.225
   turnDecelOverSpeed:
     serializedVersion: 2
     m_Curve:
@@ -129,12 +128,13 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  accelRate: 7
+  accelRate: 5.75
   groundHandlingAmount: 1
   airHandlingAmount: 0.45
   minDecelRate: 8
   maxDecelRate: 14
   fullStopThreshold: 3
+  brakeThreshold: 0.35
   minSlopeAngle: 5
   stickSpeed: 12
   slopeMultiplier: 0.75
@@ -201,12 +201,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  wallCheckDistance: 1.2
   dropDashPower: 0.9
   maxDropDashPower: 2
-  jumpDashForce: 60
-  velocityFadeOutTime: 1
-  jumpDashMaxTimer: 0.5
+  jumpDashForce: 45
+  jumpDashMaxTimer: 0.375
   rollSteering: 4
   rollMultiplier: 0.95
   homingSpeed: 75
@@ -222,12 +220,9 @@ MonoBehaviour:
   spinDashMaxChargeTime: 1.125
   spinDashChargeMultiplier: 0.35
   spinDashChargeRate: 6
-  lsdSpeed: 60
+  lsdSpeed: 5
   lsdFindFirstRadius: 5
   lsdFindFirstDistance: 3
-  lsdFindRadius: 3
-  lsdFindDistance: 3
-  lsdMinRings: 4
   lsdMaxRings: 15
   ringMask:
     serializedVersion: 2

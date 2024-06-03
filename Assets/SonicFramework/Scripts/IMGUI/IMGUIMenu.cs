@@ -91,7 +91,7 @@ namespace SonicFramework.IMGUI
                 ImGui.Spacing();
                 ImGui.Text("Player Flags");
                 
-                foreach (var flag in player.Flags.FlagsList)
+                foreach (var flag in player.Flags.List)
                 {
                     string flagName = flag.ToString();
                     

@@ -24,12 +24,12 @@ namespace SonicFramework.PlayerStates
             rb.AddForce(Vector3.up * config.homingKnockback, ForceMode.Impulse);
             timer = 0.5f;
             
-            animator.Play($"After Homing {Random.Range(1, 5)}");
+            //animator.Play($"After Homing {Random.Range(1, 5)}");
         }
 
         public override void Exit()
         {
-            animator.SetInteger("HomingIndex", -1);
+            //animator.SetInteger("HomingIndex", -1);
         }
 
         public override void FrameUpdate()

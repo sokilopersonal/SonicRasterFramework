@@ -18,7 +18,7 @@ namespace SonicFramework.PlayerStates
             
             animator.SetFloat("GroundVelocity", 0f);
             animator.SetBool("Goal", true);
-            animator.Play("ResultLook", 0);
+            //animator.Play("ResultLook", 0);
             rb.velocity = Vector3.zero;
             
             player.HUD.parent.gameObject.SetActive(false);
@@ -38,7 +38,7 @@ namespace SonicFramework.PlayerStates
             if (timer >= d && !pizdec)
             {
                 var rank = player.stage.GetRank();
-                animator.Play($"Result {rank}");
+                //animator.Play($"Result {rank}");
 
                 pizdec = true;
             }
